@@ -679,8 +679,8 @@ body.old-layout { margin: 0; background: #fff; }
 /* -------- Slideshow -------- */
 .home-outer .slideshow { position: relative; overflow: hidden; }
 .home-outer .slides-track { display: flex; transition: transform 1s ease-in-out; }
-.home-outer .slide { min-width: 100%; position: relative; }
-.home-outer .slide img { width: 100%; display: block; }
+.home-outer .slide { min-width: 100%; position: relative; height: 480px; overflow: hidden; }
+.home-outer .slide img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
 .home-outer .slideshow::after {
   content: "";
   position: absolute;
