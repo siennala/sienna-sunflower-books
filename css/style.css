@@ -806,7 +806,7 @@ body.old-layout { margin: 0; background: #fff; }
 .home-outer .book-element img { max-width: 100%; max-height: 420px; display: inline-block; }
 
 /* -------- Book detail page: description block -------- */
-.home-outer .book-detail-body { max-width: 760px; margin: 0 auto; padding: 40px 40px 10px; text-align: center; }
+.home-outer .book-detail-body { max-width: 760px; margin: 0 auto; padding: 70px 40px 10px; text-align: center; }
 .home-outer .book-detail-body .book-detail-meta {
   font-size: 0.8rem;
   letter-spacing: 0.2em;
