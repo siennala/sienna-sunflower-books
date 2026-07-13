@@ -763,7 +763,7 @@ body.old-layout { margin: 0; background: #fff; }
 /* -------- Simple book grid (old-site) -------- */
 .home-outer .os-book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 1050px;
   padding: 0 40px;
@@ -964,4 +964,9 @@ body.old-layout { margin: 0; background: #fff; }
   .home-outer .os-featured { flex-direction: column; text-align: center; }
   .home-outer .slide-overlay { left: 20px; bottom: 20px; }
   .home-outer .site-header { padding: 18px 20px; }
+  .home-outer .os-book-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .home-outer .os-book-grid { grid-template-columns: 1fr; }
 }
