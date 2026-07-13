@@ -824,45 +824,55 @@ body.old-layout { margin: 0; background: #fff; }
 .home-outer .story-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 26px;
   padding: 0 40px;
-  max-width: 1150px;
-  margin: 40px auto 60px;
+  max-width: 1100px;
+  margin: 50px auto 70px;
 }
 .home-outer .story-card {
-  background: var(--cream-soft);
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-  transition: all 0.25s ease;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 14px;
+  padding: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 220px;
+  min-height: 210px;
 }
-.home-outer .story-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+.home-outer .story-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px -12px rgba(0,0,0,0.12); }
 .home-outer .story-card.coming-soon { opacity: 0.6; }
 .home-outer .story-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 10px;
-  line-height: 1.35;
+  line-height: 1.4;
   font-family: var(--font-display);
+  color: #111;
 }
-.home-outer .story-meta { font-size: 0.8rem; color: #999; margin-bottom: 12px; }
-.home-outer .story-desc { font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 20px; }
+.home-outer .story-meta {
+  font-size: 0.75rem;
+  color: #999;
+  margin-bottom: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.home-outer .story-desc { font-size: 0.93rem; color: #555; line-height: 1.65; margin-bottom: 22px; }
 .home-outer .story-button {
   display: inline-block;
-  padding: 10px 16px;
-  background: #111;
-  color: #fff;
+  padding: 9px 18px;
+  background: transparent;
+  color: #111;
+  border: 1px solid rgba(0,0,0,0.18);
   border-radius: 999px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   align-self: flex-start;
+  transition: background 0.2s ease;
 }
-.home-outer .story-button.disabled { background: #ccc; cursor: default; pointer-events: none; }
+.home-outer .story-button:hover { background: #111; color: #fff; border-color: #111; }
+.home-outer .story-button.disabled { background: none; color: #bbb; border-color: #eee; cursor: default; pointer-events: none; }
 
 /* -------- Story reader page (old-site) -------- */
 .story-reader-page { background: var(--cream-soft); padding: 130px 20px 60px; }
