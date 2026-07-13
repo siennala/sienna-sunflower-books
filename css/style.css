@@ -771,6 +771,51 @@ body.old-layout { margin: 0; background: #fff; }
 /* -------- Footer credit (old-site) -------- */
 .home-outer .os-site-footer { text-align: center; padding: 40px 20px 60px; font-size: 0.9rem; color: #777; letter-spacing: 0.02em; }
 
+/* -------- Book description modal (old-site) -------- */
+.os-book-card { cursor: pointer; }
+.book-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.book-modal-overlay.open { display: flex; }
+.book-modal {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  position: relative;
+}
+.book-modal-close {
+  position: absolute;
+  top: 16px; right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #444;
+  line-height: 1;
+}
+.book-modal img { width: 180px; min-width: 180px; border-radius: 12px; box-shadow: 0 12px 28px rgba(0,0,0,0.15); align-self: flex-start; }
+.book-modal-body h3 { margin: 0 0 6px; font-family: var(--font-display); font-size: 1.5rem; }
+.book-modal-meta { font-size: 0.82rem; color: #888; letter-spacing: 0.05em; margin-bottom: 14px; text-transform: uppercase; }
+.book-modal-body p { line-height: 1.75; color: #444; margin: 0 0 18px; font-size: 0.95rem; }
+.book-modal-body .os-btn { margin-top: 0; }
+@media (max-width: 620px) {
+  .book-modal { flex-direction: column; padding: 30px; }
+  .book-modal img { width: 100%; min-width: 0; max-width: 220px; margin: 0 auto; }
+}
+
 @media (max-width: 800px) {
   .home-outer .os-featured { flex-direction: column; text-align: center; }
   .home-outer .slide-overlay { left: 20px; bottom: 20px; }
