@@ -9,131 +9,118 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="old-layout">
 
-<nav class="navbar">
-  <a href="index.html" class="nav-logo"><span class="spark">✦</span> Sienna Sunflower</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="books.html">Books</a></li>
-    <li><a href="read.html">Read a Sample</a></li>
-  </ul>
-  <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-</nav>
+<div class="home-outer">
 
-<!-- HERO BANNER -->
-<div class="hero-banner">
-  <a href="mala-and-henry.html">
-    <img src="Images/MALA AND HENRY illustration.png" alt="Illustration of Mala and Henry from 100 Days In The Overworld" loading="lazy">
-    <div class="hero-banner-overlay">
-      <p class="hero-banner-eyebrow">Welcome to</p>
-      <h1>Sienna Sunflower's World of Stories</h1>
-      <p>Fantasy &amp; coming-of-age tales inspired by fairies, mermaids, and dragons — step inside and start your first adventure.</p>
+  <!-- HEADER -->
+  <div class="site-header">
+    <a href="index.html" class="site-logo">Sienna Sunflower</a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="books.html">Books</a>
+      <a href="about.html">About</a>
+      <a href="read.html">Read a Sample</a>
+    </nav>
+  </div>
+
+  <!-- SLIDESHOW -->
+  <div class="slideshow">
+    <div class="slides-track" id="slidesTrack">
+
+      <div class="slide">
+        <a href="books.html#four-gods-of-hali">
+          <img src="Images/The Four Gods of Hali illustration.png" alt="The Four Gods of Hali">
+        </a>
+        <div class="slide-overlay">
+          <div class="slide-title">The Four Gods Of Hali</div>
+          <a class="slide-button" href="books.html#four-gods-of-hali">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <a href="books.html#crystal-surface">
+          <img src="Images/The Secret Beneath the Crystal Surface illustration.png" alt="The Secret Beneath the Crystal Surface">
+        </a>
+        <div class="slide-overlay">
+          <div class="slide-title">The Secret Beneath The Crystal Surface</div>
+          <a class="slide-button" href="books.html#crystal-surface">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <a href="books.html#sea-of-stars">
+          <img src="Images/To Sail the Sea of Stars cover.png" alt="To Sail the Sea of Stars">
+        </a>
+        <div class="slide-overlay">
+          <div class="slide-title">To Sail The Sea Of Stars</div>
+          <a class="slide-button" href="books.html#sea-of-stars">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <a href="books.html#bloomed-from-blood-and-snow">
+          <img src="Images/She Who Bloomed from Blood and Snow illustration.png" alt="She Who Bloomed From Blood And Snow">
+        </a>
+        <div class="slide-overlay">
+          <div class="slide-title">She Who Bloomed From Blood And Snow</div>
+          <a class="slide-button" href="books.html#bloomed-from-blood-and-snow">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <a href="books.html#blue-jay">
+          <img src="Images/Blue Jay illustration.png" alt="Blue Jay">
+        </a>
+        <div class="slide-overlay">
+          <div class="slide-title">Blue Jay</div>
+          <a class="slide-button" href="books.html#blue-jay">Learn More</a>
+        </div>
+      </div>
+
+      <div class="slide">
+        <a href="books.html#sunset-smoke">
+          <img src="Images/Sunset Smoke illustration.png" alt="Sunset Smoke">
+        </a>
+        <div class="slide-overlay">
+          <div class="slide-title">Sunset Smoke</div>
+          <a class="slide-button" href="books.html#sunset-smoke">Learn More</a>
+        </div>
+      </div>
+
     </div>
-  </a>
-</div>
 
-<!-- SPOTLIGHT -->
-<section class="home-section">
-  <div class="section-kicker">Story Spotlight</div>
-  <div class="section-title">Mala &amp; Henry: 100 Days In The Overworld</div>
-  <div class="section-subtitle">Two students, one creeper bookmark, and a whole world turned upside down.</div>
+    <div class="dots" id="dots"></div>
+  </div>
 
-  <div class="featured">
+  <!-- INTRO -->
+  <div class="os-kicker">Books by Sienna Sunflower</div>
+  <div class="os-title">Welcome</div>
+  <div class="os-subtitle">
+    Welcome to my website, which doubles as a portfolio of finished projects.
+  </div>
 
-    <div>
-      <img src="Images/MALA AND HENRY cover.png" alt="Mala & Henry: 100 Days In The Overworld cover" loading="lazy">
-    </div>
+  <!-- FEATURED -->
+  <div class="os-featured">
 
-    <div class="featured-text">
-      <div class="featured-label">Middle Grade • Adventure</div>
-      <h2>Mala &amp; Henry</h2>
+    <img src="Images/The Four Gods of Hali cover.png" alt="The Four Gods of Hali cover">
+
+    <div class="os-featured-text">
+      <div class="os-featured-label">Featured</div>
+      <h2>The Four Gods Of Hali</h2>
 
       <p>
-        When brave and curious Mala and bookish Henry discover a strange creeper bookmark, they're suddenly pulled right into the blocky world of Minecraft! At Cherry Wood Academy, a giant base and school built by other trapped kids, they must relearn how to punch trees, craft tools, and fight monsters — while a rumor of a portal home appears every hundred days.
+        In the magical world of Hali, Halimah Samra is a focused student attending the top magic academy and tries her best to ignore her stuck-up competitor, Ewen Hanif. But when Halimah's magic suddenly changes, her world is turned upside down as she discovers she is the child of the late Goddess of Life. Her old rival becomes her closest ally, and Halimah is swept into a journey across Hali. She and Ewen travel under the guidance of the cat Professor Lethco to seek the wisdom of the remaining former gods, only to discover the former gods are vanishing.
       </p>
 
-      <a class="pill-btn primary" href="read.html">Read Online For Free</a>
-      <a class="pill-btn secondary" href="mala-and-henry.html">Full Story Spotlight</a>
+      <a class="os-btn primary" href="books.html#four-gods-of-hali">Read More</a>
+      <a class="os-btn secondary" href="https://www.amazon.com/Four-Gods-Hali-Sienna-Sunflower/dp/B0GDJFHKB3" target="_blank" rel="noopener">Buy Book</a>
     </div>
 
   </div>
-</section>
 
-<!-- FULL COVER -->
-<section class="home-section bg-soft">
-  <div class="full-cover-section">
-    <div class="section-kicker">A Closer Look</div>
-    <div class="section-title">Full Cover Reveal</div>
-    <div class="section-subtitle">Front and back cover artwork for Mala &amp; Henry: 100 Days In The Overworld.</div>
+</div>
 
-    <div class="full-cover-wrapper">
-      <img src="Images/MALA AND HENRY full cover.png" alt="Full cover art for Mala and Henry: 100 Days In The Overworld" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- EXPLORE -->
-<section class="home-section">
-  <div class="explore-section">
-    <div class="section-kicker">Dive Deeper</div>
-    <div class="section-title">Explore More Worlds</div>
-    <div class="section-subtitle">More stories from Sienna, waiting just past the Overworld.</div>
-
-    <div class="explore-grid">
-
-      <div class="explore-card">
-        <h3>Read a Sample</h3>
-        <p>Start Mala and Henry's first hundred days in the Overworld — free, right now.</p>
-        <a class="pill-btn secondary" href="read.html">Read a Sample</a>
-      </div>
-
-      <div class="explore-card">
-        <h3>Meet the Author</h3>
-        <p>Get to know Sienna Sunflower and the magic behind her stories.</p>
-        <a class="pill-btn secondary" href="about.html">More About Sienna</a>
-      </div>
-
-      <div class="explore-card">
-        <h3>The Full Library</h3>
-        <p>Seven worlds to wander, from Minecraft academies to vampire courts.</p>
-        <a class="pill-btn secondary" href="books.html">Browse the Books</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand reveal">
-        <h3>Sienna Sunflower</h3>
-        <p>Fantasy &amp; coming-of-age stories inspired by fairies, mermaids, and dragons — for readers who still believe in magic.</p>
-      </div>
-      <div class="footer-links reveal reveal-delay-1">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="read.html">Read a Sample</a></li>
-        </ul>
-      </div>
-      <div class="footer-links reveal reveal-delay-2">
-        <h4>Books</h4>
-        <ul>
-          <li><a href="books.html#mala-henry">Mala &amp; Henry</a></li>
-          <li><a href="books.html#four-gods-of-hali">The Four Gods of Hali</a></li>
-          <li><a href="books.html#sunset-smoke">Sunset Smoke</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2026 Sienna Sunflower. All stories, all magic, all rights reserved.</div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+<script src="js/slideshow.js"></script>
 </body>
 </html>

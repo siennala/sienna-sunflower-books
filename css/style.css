@@ -639,3 +639,136 @@ footer {
 .pill-btn.primary:hover { background: var(--ink); transform: translateY(-2px); }
 .pill-btn.secondary { background: transparent; color: var(--ink); border: 1px solid rgba(0,0,0,0.18); }
 .pill-btn.secondary:hover { background: var(--cream-soft); transform: translateY(-2px); }
+
+/* ============================================
+   Old-Site Layout — minimalist black & white
+   Scoped under .home-outer to avoid collisions
+   ============================================ */
+body.old-layout { margin: 0; background: #fff; }
+
+.home-outer {
+  max-width: 1300px;
+  margin: 0 auto 60px;
+  background: #fff;
+  box-shadow: 0 12px 45px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding-bottom: 90px;
+}
+
+/* -------- Simple header -------- */
+.home-outer .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.home-outer .site-logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  font-family: var(--font-display);
+}
+.home-outer .site-nav { display: flex; gap: 24px; }
+.home-outer .site-nav a { text-decoration: none; color: #444; font-weight: 500; font-family: var(--font-body); }
+.home-outer .site-nav a.active { color: #111; font-weight: 700; }
+
+/* -------- Slideshow -------- */
+.home-outer .slideshow { position: relative; overflow: hidden; }
+.home-outer .slides-track { display: flex; transition: transform 1s ease-in-out; }
+.home-outer .slide { min-width: 100%; position: relative; }
+.home-outer .slide img { width: 100%; display: block; }
+.home-outer .slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.05), rgba(0,0,0,0.45));
+  pointer-events: none;
+}
+.home-outer .slide-overlay {
+  position: absolute;
+  bottom: 50px; left: 50px;
+  z-index: 2;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: white;
+  max-width: 420px;
+}
+.home-outer .slide-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; font-family: var(--font-display); }
+.home-outer .slide-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 999px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+.home-outer .dots {
+  position: absolute;
+  bottom: 18px; width: 100%;
+  display: flex; justify-content: center; gap: 8px;
+  z-index: 5;
+}
+.home-outer .dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; }
+.home-outer .dot.active { background: white; }
+
+/* -------- Text sections (old-site style) -------- */
+.home-outer .os-kicker {
+  text-align: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 60px;
+}
+.home-outer .os-title { text-align: center; font-size: 2.2rem; margin: 10px 0; font-family: var(--font-display); }
+.home-outer .os-subtitle { text-align: center; color: #555; max-width: 800px; margin: 0 auto 40px; line-height: 1.8; }
+
+/* -------- Featured (old-site) -------- */
+.home-outer .os-featured {
+  display: flex;
+  gap: 50px;
+  padding: 55px 40px;
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  background: #fafafa;
+  border-radius: 18px;
+}
+.home-outer .os-featured img { width: 300px; border-radius: 16px; box-shadow: 0 18px 40px rgba(0,0,0,0.18); }
+.home-outer .os-featured-text h2 { font-size: 2rem; margin-bottom: 10px; font-family: var(--font-display); }
+.home-outer .os-featured-text p { line-height: 1.8; color: #444; }
+.home-outer .os-featured-label { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: #888; margin-bottom: 6px; }
+
+/* -------- Buttons (old-site) -------- */
+.home-outer .os-btn { display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; margin-top: 15px; margin-right: 10px; font-family: var(--font-body); }
+.home-outer .os-btn.primary { background: #111; color: #fff; }
+.home-outer .os-btn.secondary { background: #eee; color: #111; }
+
+/* -------- Simple book grid (old-site) -------- */
+.home-outer .os-book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 34px;
+  padding: 0 40px 90px;
+  margin-top: 30px;
+}
+.home-outer .os-book-card { text-align: center; transition: transform 0.25s ease; }
+.home-outer .os-book-card:hover { transform: translateY(-6px); }
+.home-outer .os-book-card img { width: 100%; border-radius: 16px; box-shadow: 0 12px 28px rgba(0,0,0,0.14); }
+.home-outer .os-book-card-title { margin-top: 12px; font-weight: 600; font-family: var(--font-body); }
+
+/* -------- Footer credit (old-site) -------- */
+.home-outer .os-site-footer { text-align: center; padding: 40px 20px 60px; font-size: 0.9rem; color: #777; letter-spacing: 0.02em; }
+
+@media (max-width: 800px) {
+  .home-outer .os-featured { flex-direction: column; text-align: center; }
+  .home-outer .slide-overlay { left: 20px; bottom: 20px; }
+  .home-outer .site-header { padding: 18px 20px; }
+}

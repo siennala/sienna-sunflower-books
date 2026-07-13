@@ -9,110 +9,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="old-layout">
 
-<nav class="navbar">
-  <a href="index.html" class="nav-logo"><span class="spark">✦</span> Sienna Sunflower</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="books.html">Books</a></li>
-    <li><a href="read.html">Read a Sample</a></li>
-  </ul>
-  <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-</nav>
+<div class="home-outer">
 
-<header class="page-hero">
-  <div class="container">
-    <p class="section-eyebrow">The Author</p>
-    <h1>Hi, I'm Sienna</h1>
+  <!-- HEADER -->
+  <div class="site-header">
+    <a href="index.html" class="site-logo">Sienna Sunflower</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="about.html" class="active">About</a>
+      <a href="read.html">Read a Sample</a>
+    </nav>
   </div>
-</header>
 
-<section>
-  <div class="container split">
-    <div class="split-media reveal">
-      <img src="Images/Blue Jay illustration.png" alt="Illustration by Sienna Sunflower" loading="lazy">
-    </div>
-    <div class="split-text reveal reveal-delay-1">
+  <!-- FEATURED ABOUT -->
+  <div class="os-featured" style="margin-top: 50px;">
+
+    <img src="Images/Blue Jay illustration.png" alt="Illustration by Sienna Sunflower">
+
+    <div class="os-featured-text">
+
+      <h2>Hi, I'm Sienna</h2>
+
       <p>I draw inspiration for my stories from fairies, mermaids, and dragons. With a pen in hand, I've traveled through magical worlds, gone on exciting adventures, and made the best of friends.</p>
       <p>Whether it's a school built inside Minecraft, a kingdom of vanishing gods, or a demon longing to be human, every world I write begins with the same question: what if magic were real, right here, in the middle of an ordinary day?</p>
       <p>I write for readers who still believe that friendship can move mountains, that courage comes in small moments, and that there's always a little wonder hiding just beneath the surface.</p>
-      <p class="signature">— Sienna Sunflower</p>
-    </div>
-  </div>
-</section>
 
-<section class="bg-soft">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="section-eyebrow">What I Write</p>
-      <h2>Every story, a doorway</h2>
-      <p>Across seven books and countless realms, a few things stay true.</p>
+      <a class="os-btn primary" href="books.html">See the Books</a>
+      <a class="os-btn secondary" href="read.html">Read a Sample</a>
     </div>
-    <div class="value-row">
-      <div class="value-card reveal">
-        <span class="icon">🐉</span>
-        <h4>Worlds Worth Getting Lost In</h4>
-        <p>From the Overworld to the kingdom of Hali, I build settings readers want to live inside.</p>
-      </div>
-      <div class="value-card reveal reveal-delay-1">
-        <span class="icon">🧜‍♀️</span>
-        <h4>Characters Who Feel Real</h4>
-        <p>Brave, flawed, funny, and fiercely loyal — the people in my stories grow the way real people do.</p>
-      </div>
-      <div class="value-card reveal reveal-delay-2">
-        <span class="icon">✨</span>
-        <h4>Heart Beneath the Magic</h4>
-        <p>Friendship, family, and the courage to choose your own path are at the center of every tale.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section>
-  <div class="container">
-    <div class="cta-band reveal">
-      <div class="sparkle-field"></div>
-      <h2>Curious Where the Stories Lead?</h2>
-      <p>Browse all seven books, or dive straight into a free sample chapter.</p>
-      <div class="hero-ctas" style="margin-top: 10px;">
-        <a href="books.html" class="btn btn-gold">See the Books</a>
-        <a href="read.html" class="btn btn-outline">Read a Sample</a>
-      </div>
-    </div>
   </div>
-</section>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand reveal">
-        <h3>Sienna Sunflower</h3>
-        <p>Fantasy &amp; coming-of-age stories inspired by fairies, mermaids, and dragons — for readers who still believe in magic.</p>
-      </div>
-      <div class="footer-links reveal reveal-delay-1">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="read.html">Read a Sample</a></li>
-        </ul>
-      </div>
-      <div class="footer-links reveal reveal-delay-2">
-        <h4>Books</h4>
-        <ul>
-          <li><a href="books.html#mala-henry">Mala &amp; Henry</a></li>
-          <li><a href="books.html#four-gods-of-hali">The Four Gods of Hali</a></li>
-          <li><a href="books.html#sunset-smoke">Sunset Smoke</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2026 Sienna Sunflower. All stories, all magic, all rights reserved.</div>
-  </div>
-</footer>
+</div>
 
-<script src="js/main.js"></script>
 </body>
 </html>
