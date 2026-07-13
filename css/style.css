@@ -499,8 +499,8 @@ footer {
 .bg-soft { background: var(--cream-soft); }
 
 /* -------- Homepage: hero banner -------- */
-.hero-banner { display: block; margin-top: 84px; position: relative; }
-.hero-banner img { width: 100%; display: block; }
+.hero-banner { display: block; margin-top: 84px; position: relative; overflow: hidden; height: 60vh; min-height: 420px; max-height: 640px; }
+.hero-banner img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
 .hero-banner-overlay {
   position: absolute;
   inset: 0;
