@@ -676,6 +676,10 @@ body.old-layout { margin: 0; background: #fff; }
 .home-outer .site-nav a { text-decoration: none; color: #444; font-weight: 500; font-family: var(--font-body); }
 .home-outer .site-nav a.active { color: #111; font-weight: 700; }
 
+/* -------- Static hero image -------- */
+.home-outer .home-hero-image { display: block; text-align: center; background: var(--cream-soft); padding: 40px 20px; }
+.home-outer .home-hero-image img { max-width: 100%; max-height: 480px; display: inline-block; margin: 0 auto; }
+
 /* -------- Slideshow -------- */
 .home-outer .slideshow { position: relative; overflow: hidden; }
 .home-outer .slides-track { display: flex; transition: transform 1s ease-in-out; }
