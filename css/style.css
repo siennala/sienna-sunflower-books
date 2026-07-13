@@ -819,7 +819,7 @@ body.old-layout { margin: 0; background: #fff; }
 
 /* -------- Book detail page: full cover reveal -------- */
 .home-outer .book-full-cover { text-align: center; padding: 70px 20px; }
-.home-outer .book-full-cover img { width: 100%; max-width: 820px; box-shadow: 0 16px 40px -12px rgba(0,0,0,0.15); border-radius: 10px; }
+.home-outer .book-full-cover img { width: 100%; max-width: 820px; display: block; margin: 0 auto; box-shadow: 0 16px 40px -12px rgba(0,0,0,0.15); border-radius: 10px; }
 
 @media (max-width: 800px) {
   .home-outer .os-featured { flex-direction: column; text-align: center; }
