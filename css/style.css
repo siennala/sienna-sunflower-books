@@ -875,6 +875,16 @@ body.old-layout { margin: 0; background: #fff; }
 .home-outer .story-button.disabled { background: none; color: #bbb; border-color: #eee; cursor: default; pointer-events: none; }
 
 /* -------- Story reader page (old-site) -------- */
+.story-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #111;
+  z-index: 999;
+  transition: width 0.05s linear;
+}
 .story-reader-page { background: #ffffff; padding: 110px 20px 40px; }
 .story-reader-box {
   background: #ffffff;
@@ -910,7 +920,7 @@ body.old-layout { margin: 0; background: #fff; }
   font-size: 1.05rem;
   line-height: 1.9;
 }
-.story-reader-box p:first-of-type::first-letter {
+.story-reader-box .byline + p::first-letter {
   font-family: var(--font-display);
   font-size: 3rem;
   float: left;
