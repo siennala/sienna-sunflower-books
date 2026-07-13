@@ -928,6 +928,10 @@ body.old-layout { margin: 0; background: #fff; }
   color: #2a2a2a;
   font-size: 1.05rem;
   line-height: 1.9;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .story-reader-box .byline + p::first-letter {
   font-family: var(--font-display);
