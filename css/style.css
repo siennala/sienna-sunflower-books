@@ -647,7 +647,7 @@ footer {
 body.old-layout { margin: 0; background: #fff; }
 
 .home-outer {
-  max-width: 1300px;
+  max-width: none;
   margin: 0 auto 60px;
   background: #fff;
   overflow: hidden;
@@ -660,6 +660,7 @@ body.old-layout { margin: 0; background: #fff; }
   justify-content: space-between;
   align-items: center;
   padding: 22px 40px;
+  background: #f6f6f6;
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .home-outer .site-logo {
