@@ -650,7 +650,6 @@ body.old-layout { margin: 0; background: #fff; }
   max-width: 1300px;
   margin: 0 auto 60px;
   background: #fff;
-  box-shadow: 0 12px 45px rgba(0,0,0,0.08);
   overflow: hidden;
   padding-bottom: 90px;
 }
