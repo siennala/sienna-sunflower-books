@@ -679,8 +679,32 @@ body.old-layout { margin: 0; background: #fff; }
 .home-outer .site-nav a.active { color: #111; font-weight: 700; }
 
 /* -------- Static hero image -------- */
-.home-outer .home-hero-image { display: block; text-align: center; background: #ffffff; padding: 0; }
-.home-outer .home-hero-image img { width: 100%; max-width: 720px; height: auto; display: block; margin: 0 auto; }
+.home-outer .home-hero-image { position: relative; display: block; text-align: center; background: #ffffff; padding: 0; }
+.home-outer .hero-sparkle {
+  position: absolute;
+  color: #999;
+  font-size: 1.1rem;
+  opacity: 0;
+  animation: hero-sparkle-twinkle 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+@keyframes hero-sparkle-twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.7); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+.home-outer .home-hero-image img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: hero-bob 4s ease-in-out infinite;
+}
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
 
 /* -------- Slideshow -------- */
 .home-outer .slideshow { position: relative; overflow: hidden; }
