@@ -771,50 +771,55 @@ body.old-layout { margin: 0; background: #fff; }
 /* -------- Footer credit (old-site) -------- */
 .home-outer .os-site-footer { text-align: center; padding: 40px 20px 60px; font-size: 0.9rem; color: #777; letter-spacing: 0.02em; }
 
-/* -------- Book description modal (old-site) -------- */
-.os-book-card { cursor: pointer; }
-.book-modal-overlay {
-  position: fixed;
+/* -------- Book detail page: hero image (cropped) -------- */
+.home-outer .book-hero { position: relative; overflow: hidden; height: 60vh; min-height: 380px; max-height: 620px; }
+.home-outer .book-hero img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+.home-outer .book-hero-overlay {
+  position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
-  display: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  text-align: center;
   padding: 20px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
-.book-modal-overlay.open { display: flex; }
-.book-modal {
-  background: #fff;
-  border-radius: 18px;
-  max-width: 700px;
-  width: 100%;
-  max-height: 88vh;
-  overflow-y: auto;
-  display: flex;
-  gap: 30px;
-  padding: 40px;
-  position: relative;
+.home-outer .book-hero-overlay .book-hero-kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 14px;
+  opacity: 0.9;
 }
-.book-modal-close {
-  position: absolute;
-  top: 16px; right: 18px;
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  color: #444;
-  line-height: 1;
+.home-outer .book-hero-overlay h1 {
+  color: #ffffff;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  margin: 0;
+  font-family: var(--font-display);
+  text-shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
-.book-modal img { width: 180px; min-width: 180px; border-radius: 12px; box-shadow: 0 12px 28px rgba(0,0,0,0.15); align-self: flex-start; }
-.book-modal-body h3 { margin: 0 0 6px; font-family: var(--font-display); font-size: 1.5rem; }
-.book-modal-meta { font-size: 0.82rem; color: #888; letter-spacing: 0.05em; margin-bottom: 14px; text-transform: uppercase; }
-.book-modal-body p { line-height: 1.75; color: #444; margin: 0 0 18px; font-size: 0.95rem; }
-.book-modal-body .os-btn { margin-top: 0; }
-@media (max-width: 620px) {
-  .book-modal { flex-direction: column; padding: 30px; }
-  .book-modal img { width: 100%; min-width: 0; max-width: 220px; margin: 0 auto; }
+
+/* -------- Book detail page: element showcase -------- */
+.home-outer .book-element { text-align: center; padding: 70px 20px 20px; }
+.home-outer .book-element img { max-width: 100%; max-height: 420px; display: inline-block; }
+
+/* -------- Book detail page: description block -------- */
+.home-outer .book-detail-body { max-width: 760px; margin: 0 auto; padding: 40px 40px 10px; text-align: center; }
+.home-outer .book-detail-body .book-detail-meta {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 14px;
 }
+.home-outer .book-detail-body p { line-height: 1.85; color: #444; text-align: left; margin: 0 0 1.2em; }
+.home-outer .book-detail-actions { text-align: center; padding: 10px 20px 20px; }
+
+/* -------- Book detail page: full cover reveal -------- */
+.home-outer .book-full-cover { text-align: center; padding: 70px 20px; }
+.home-outer .book-full-cover img { width: 100%; max-width: 820px; box-shadow: 0 16px 40px -12px rgba(0,0,0,0.15); border-radius: 10px; }
 
 @media (max-width: 800px) {
   .home-outer .os-featured { flex-direction: column; text-align: center; }
