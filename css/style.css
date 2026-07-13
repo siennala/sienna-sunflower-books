@@ -820,6 +820,75 @@ body.old-layout { margin: 0; background: #fff; }
 .home-outer .book-full-cover { text-align: center; padding: 70px 20px; }
 .home-outer .book-full-cover img { width: 100%; max-width: 820px; display: block; margin: 0 auto; box-shadow: 0 16px 40px -12px rgba(0,0,0,0.15); border-radius: 10px; }
 
+/* -------- Short stories grid (old-site) -------- */
+.home-outer .story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+  max-width: 1150px;
+  margin: 40px auto 60px;
+}
+.home-outer .story-card {
+  background: var(--cream-soft);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}
+.home-outer .story-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.12); }
+.home-outer .story-card.coming-soon { opacity: 0.6; }
+.home-outer .story-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.35;
+  font-family: var(--font-display);
+}
+.home-outer .story-meta { font-size: 0.8rem; color: #999; margin-bottom: 12px; }
+.home-outer .story-desc { font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 20px; }
+.home-outer .story-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+.home-outer .story-button.disabled { background: #ccc; cursor: default; pointer-events: none; }
+
+/* -------- Story reader page (old-site) -------- */
+.story-reader-page { background: var(--cream-soft); padding: 130px 20px 60px; }
+.story-reader-box {
+  background: #fff;
+  border-radius: 24px;
+  padding: 60px 8vw;
+  box-shadow: 0 30px 60px -24px rgba(0,0,0,0.15);
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+.story-reader-box .kicker { text-align: center; color: #888; letter-spacing: 0.2em; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 8px; }
+.story-reader-box h1 { text-align: center; font-size: clamp(1.7rem, 4vw, 2.4rem); font-family: var(--font-display); }
+.story-reader-box .byline { text-align: center; color: #999; margin-bottom: 40px; font-style: italic; }
+.story-reader-box p { margin: 0 0 1.3em; color: #333; font-size: 1.02rem; line-height: 1.8; }
+.story-reader-box p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 10px;
+  color: #111;
+}
+.story-divider { text-align: center; color: #999; margin: 30px 0; font-size: 1.1rem; letter-spacing: 0.4em; }
+.story-back-link { display: block; text-align: center; margin-top: 30px; }
+
 /* -------- Site copyright footer -------- */
 .home-outer .site-copy-footer {
   text-align: center;
