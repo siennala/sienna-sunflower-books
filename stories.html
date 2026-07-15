@@ -28,10 +28,30 @@
   <!-- INTRO -->
   <div class="os-title" style="margin-top: 60px;">Short Stories</div>
 
-  <!-- GRID -->
-  <div class="story-grid" style="margin-top: 30px;">
+  <!-- FILTERS -->
+  <div class="story-filter-bar">
+    <div class="story-filter-group">
+      <label for="storyGenreFilter">Genre</label>
+      <select id="storyGenreFilter">
+        <option value="all">All Genres</option>
+      </select>
+    </div>
+    <div class="story-filter-group">
+      <label for="storySortFilter">Sort by Word Count</label>
+      <select id="storySortFilter">
+        <option value="none">Default Order</option>
+        <option value="asc">Shortest First</option>
+        <option value="desc">Longest First</option>
+      </select>
+    </div>
+    <button type="button" id="storyFilterReset" class="story-filter-reset">Reset</button>
+  </div>
+  <p class="story-filter-empty" id="storyFilterEmpty" style="display: none;">No stories match the selected filter.</p>
 
-    <div class="story-card">
+  <!-- GRID -->
+  <div class="story-grid" id="storyGrid" style="margin-top: 30px;">
+
+    <div class="story-card" data-genres="Fantasy,Slice-of-life" data-words="15605">
       <div>
         <div class="story-title">The Golden Sunlight In The Summer Is The Light That Paints The Castle In Color</div>
         <div class="story-meta">Fantasy &middot; Slice-of-life &middot; 15605 words</div>
@@ -40,16 +60,16 @@
       <a href="story-golden-sunshine.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Contemporary,Slice-of-life" data-words="13990">
       <div>
         <div class="story-title">Here's To Youth</div>
-        <div class="story-meta">Slice-of-life &middot; Campus &middot; 13990 words</div>
+        <div class="story-meta">Contemporary &middot; Slice-of-life &middot; 13990 words</div>
         <div class="story-desc">Ouyang Hao meets Jiang Yiran, and an unlikely friendship is formed.</div>
       </div>
       <a href="story-heres-to-youth.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Fantasy,Ancient Style" data-words="12821">
       <div>
         <div class="story-title">The Prince's Cursed Life</div>
         <div class="story-meta">Fantasy &middot; Ancient Style &middot; 12821 words</div>
@@ -58,16 +78,16 @@
       <a href="story-princes-cursed-life.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Slice-of-life,Romance" data-words="6892">
       <div>
         <div class="story-title">We Met When The Flowers Bloomed In The Spring</div>
         <div class="story-meta">Slice-of-life &middot; Romance &middot; 6892 words</div>
-        <div class="story-desc">Two girls, two cats, and a friendship that bloomed with the cherry blossoms one spring.</div>
+        <div class="story-desc">Two girls, two cats, and the beauty of a quiet life in a quiet town.</div>
       </div>
       <a href="story-flowers-bloomed-spring.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Fantasy,Mythical Creatures" data-words="15131">
       <div>
         <div class="story-title">Story Of The Maiden Jiselle</div>
         <div class="story-meta">Fantasy &middot; Mythical Creatures &middot; 15131 words</div>
@@ -76,7 +96,7 @@
       <a href="story-maiden-jiselle.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Fantasy,Slice-of-life" data-words="16369">
       <div>
         <div class="story-title">The Moon, The Stars, And The Evernight Princess</div>
         <div class="story-meta">Fantasy &middot; Slice-of-life &middot; 16369 words</div>
@@ -85,14 +105,59 @@
       <a href="story-evernight-princess.html" class="story-button">Read →</a>
     </div>
 
+    <div class="story-card" data-genres="Fantasy,Romance" data-words="7616">
+      <div>
+        <div class="story-title">Endless Ocean, Infinite Sky</div>
+        <div class="story-meta">Fantasy &middot; Romance &middot; 7616 words</div>
+        <div class="story-desc">A witch and a pirate traverse the oceans and skies together.</div>
+      </div>
+      <a href="story-endless-ocean-infinite-sky.html" class="story-button">Read →</a>
+    </div>
+
+    <div class="story-card" data-genres="Contemporary,Romance" data-words="12514">
+      <div>
+        <div class="story-title">Fish With Jewels</div>
+        <div class="story-meta">Contemporary &middot; Romance &middot; 12514 words</div>
+        <div class="story-desc">An aspiring photographer meets an artist who sees the same shapes in the clouds.</div>
+      </div>
+      <a href="story-fish-with-jewels.html" class="story-button">Read →</a>
+    </div>
+
+    <div class="story-card" data-genres="Fantasy,Romance" data-words="10262">
+      <div>
+        <div class="story-title">The Maid And Her Prince</div>
+        <div class="story-meta">Fantasy &middot; Romance &middot; 10262 words</div>
+        <div class="story-desc">A prince and a maid find the courage to choose each other.</div>
+      </div>
+      <a href="story-the-maid-and-her-prince.html" class="story-button">Read →</a>
+    </div>
+
+    <div class="story-card" data-genres="Contemporary,Romance" data-words="38142">
+      <div>
+        <div class="story-title">A Memory Of Summer's End</div>
+        <div class="story-meta">Contemporary &middot; Romance &middot; 38142 words</div>
+        <div class="story-desc">Both quietly struggling, Matteo and Nadia slowly learn to heal together.</div>
+      </div>
+      <a href="story-memory-of-summers-end.html" class="story-button">Read →</a>
+    </div>
+
+    <div class="story-card" data-genres="Fantasy,Romance" data-words="15810">
+      <div>
+        <div class="story-title">To Journey Under Sunlight</div>
+        <div class="story-meta">Fantasy &middot; Romance &middot; 15810 words</div>
+        <div class="story-desc">Queen Chloe-Jane heads east with Storm the Dragonhearted to meet a prince from the eastern kingdoms.</div>
+      </div>
+      <a href="story-journey-under-sunlight.html" class="story-button">Read →</a>
+    </div>
+
   </div>
 
   <!-- FAIRY TALE COLLECTION -->
-  <div class="os-title" style="margin-top: 60px; font-size: 1.4rem;">Fairy Tale Collection</div>
+  <div class="os-title" id="fairyTaleHeading" style="margin-top: 60px; font-size: 1.4rem;">Fairy Tale Collection</div>
 
-  <div class="story-grid">
+  <div class="story-grid" id="storyGridFairy">
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Fairy Tale,Retelling" data-words="1157">
       <div>
         <div class="story-title">Ember</div>
         <div class="story-meta">Fairy Tale &middot; Retelling &middot; 1157 words</div>
@@ -101,7 +166,7 @@
       <a href="story-ember.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Fairy Tale,Retelling" data-words="1071">
       <div>
         <div class="story-title">Apple Red</div>
         <div class="story-meta">Fairy Tale &middot; Retelling &middot; 1071 words</div>
@@ -110,7 +175,7 @@
       <a href="story-apple-red.html" class="story-button">Read →</a>
     </div>
 
-    <div class="story-card">
+    <div class="story-card" data-genres="Fairy Tale,Ancient Style" data-words="1151">
       <div>
         <div class="story-title">A'Mei And The Dragon</div>
         <div class="story-meta">Fairy Tale &middot; Ancient Style &middot; 1151 words</div>
@@ -130,5 +195,6 @@
 
 </div>
 
+<script src="js/story-filter.js"></script>
 </body>
 </html>
