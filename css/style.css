@@ -1019,7 +1019,8 @@ body.old-layout { margin: 0; background: #fff; }
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.story-reader-box .byline + p::first-letter {
+.story-reader-box .byline + p::first-letter,
+.story-reader-box #storyBody > p:first-child::first-letter {
   font-family: var(--font-display);
   font-size: 3rem;
   float: left;
