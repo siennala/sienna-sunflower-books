@@ -1,0 +1,52 @@
+{
+  "assets": {
+    "458c508a": {
+      "id": "458c508a",
+      "type": "image",
+      "src": "layout_mockup_1_minimal_editorial.png",
+      "duration_s": null,
+      "resolution": null,
+      "provider": "nano-banana-pro",
+      "generation": {
+        "prompt": "A clean website homepage mockup design for an author site called \"Sienna Sunflower.\" Style: Minimal Editorial. White background, elegant serif typography (Playfair Display style), lots of whitespace, monochrome black/gray/white palette. Layout: top navigation bar with logo \"Sienna Sunflower\" left-aligned and nav links (Home, Books, Short Stories, About) right-aligned in a thin serif font. Below, a large centered hero section with soft pencil-illustration style character art of a girl with curly hair reading a book (black and white sketch style), small twinkling star/sparkle accents floating around the image. Below the hero, an elegant italic tagline \"Writer & Daydreamer.\" Then a horizontal row of 3 minimalist book cover thumbnails with soft drop shadows, each with a small caption below. Everything spaced generously, refined, literary, gallery-like aesthetic. Show this as a realistic browser window screenshot mockup with a subtle browser chrome bar at the very top.",
+        "model": "nano-banana-pro",
+        "n": 1,
+        "google_search_grounding": false
+      },
+      "created_at": "2026-07-15T19:18:00Z",
+      "tags": null
+    },
+    "702cf203": {
+      "id": "702cf203",
+      "type": "image",
+      "src": "layout_mockup_2_storybook_cozy.png",
+      "duration_s": null,
+      "resolution": null,
+      "provider": "nano-banana-pro",
+      "generation": {
+        "prompt": "A cozy storybook-themed website homepage mockup design for an author site called \"Sienna Sunflower.\" Style: Cottagecore Storybook. Warm cream/parchment background with subtle paper texture, ornate thin decorative border flourishes framing sections (like vintage book title pages), serif typography throughout. Layout: top navigation with a small hand-drawn sunflower icon next to \"Sienna Sunflower\" logo, nav links styled like tabs on an old book. Large hero banner with a soft pencil-sketch illustration of a whimsical fantasy scene (a girl with a dragon or fairy motif, black and white line art), decorative swirl ornaments and small star sparkles scattered around, an elegant handwritten-style tagline underneath like \"Once upon a time...\" Below that, a grid of book covers displayed like items on a bookshelf with soft shadows, rounded corners, warm beige card backgrounds. Show this as a realistic browser window screenshot mockup with a subtle browser chrome bar at the top.",
+        "model": "nano-banana-pro",
+        "n": 1,
+        "google_search_grounding": false
+      },
+      "created_at": "2026-07-15T19:18:32Z",
+      "tags": null
+    },
+    "cfca9ba5": {
+      "id": "cfca9ba5",
+      "type": "image",
+      "src": "layout_mockup_3_magazine_grid.png",
+      "duration_s": null,
+      "resolution": null,
+      "provider": "nano-banana-pro",
+      "generation": {
+        "prompt": "A bold magazine-style website homepage mockup design for an author site called \"Sienna Sunflower.\" Style: Editorial Magazine Grid. White and light gray background, asymmetric grid layout like a literary magazine cover. Layout: top navigation bar minimal and bold, uppercase letter-spaced sans-serif nav links. Below, an asymmetric hero section: on the left a large featured book cover image (pencil-sketch style illustration of a girl in fantasy school uniform holding a glowing book), on the right large bold serif headline text \"SIENNA SUNFLOWER\" with a short punchy tagline below and a call-to-action button styled as a black pill button. Below the hero, a dense masonry-style grid of multiple book covers and story thumbnails at varying sizes, creating a dynamic collage look, with small text labels. Strong contrast, confident typography, modern literary magazine aesthetic. Show this as a realistic browser window screenshot mockup with a subtle browser chrome bar at the top.",
+        "model": "nano-banana-pro",
+        "n": 1,
+        "google_search_grounding": false
+      },
+      "created_at": "2026-07-15T19:19:02Z",
+      "tags": null
+    }
+  }
+}
